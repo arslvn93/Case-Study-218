@@ -5,176 +5,134 @@
 // To change text, images, or other content, edit the values in this file.
 // =_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_=_
 const config = {
-  // -----------------------------------------------------------------------------------------------
-  // GLOBALS
-  // These are values that can be reused throughout the page.
-  // Use the `{{variableName}}` syntax in any string to automatically insert a value from here.
-  // For example, `{{companyName}}` will be replaced with "iStreet Realty Group".
-  // -----------------------------------------------------------------------------------------------
-  globals: {
-    // The main name of the company or brand. Used in the header, footer, and other text.
-    companyName: "iStreet Realty Group",
-
-    // The default text for all major Call-to-Action (CTA) buttons.
-    mainCTAButtonText: "Book A Discovery Call",
-    // The destination URL for all major Call-to-Action (CTA) buttons.
-    mainCTAButtonURL: "https://calendly.com/your-salesgenius-link",
-
-    // The primary theme color for the page (e.g., for tags, links, highlights).
-    // This value is applied to the `--gold` CSS variable.
-    primaryColor: "#e3c379",
-
-    // The accent theme color, typically used for button backgrounds.
-    // This value is applied to the `--accent` CSS variable.
-    accentColor: "#d9c6a2",
-
-    // A list of agent objects. This data is used to build the contact cards in the sidebar and footer.
-    // You can add or remove agents from this list.
-    agents: [
+  "globals": {
+    "companyName": "Myles Schwartz",
+    "mainCTAButtonText": "Book A Discovery Call",
+    "mainCTAButtonURL": "#contact",
+    "primaryColor": "#e3c379",
+    "accentColor": "#d9c6a2",
+    "agents": [
       {
-        // Full name of the agent.
-        name: "Rick Roccasalva",
-        // (Optional) URL for the agent's photo. If omitted, no photo will be shown for this agent.
-        imageSrc: "https://images.unsplash.com/photo-1557862921-37829c790f19?fit=crop&w=100&q=80",
-        // A list of contact methods for the agent.
-        contactDetails: [
-          { type: "email", value: "rick@istreelrealty.ca" },
-          { type: "phone", value: "(416) 616-9369" }
-        ]
-      },
-      {
-        name: "Steven Simonetti",
-        imageSrc: "https://images.unsplash.com/photo-1560250097-0b93528c311a?fit=crop&w=100&q=80",
-        contactDetails: [
-          { type: "email", value: "steven@istreelrealty.ca" },
-          { type: "phone", value: "(416) 400-7653" }
+        "name": "Myles Schwartz",
+        "imageSrc": "https://prod-files-secure.s3.us-west-2.amazonaws.com/8e0c10a0-da43-409c-b191-91135b7161ff/ca17bf82-c160-4228-8322-1cddba92d2f4/Headshot_1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TJKAVD55%2F20250903%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250903T200117Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIHvE1H3KxmsPNTGBIYZKJbiAByam5%2BxIRdiWNZB9SEsSAiEA03JEMhwjz3WNzG0EJ39Coj5FvQMfFmlgw1ZZSKkMsKIq%2FwMITBAAGgw2Mzc0MjMxODM4MDUiDN5bJk3LkJWRqjMzpyrcA2UP7EsPsBn%2B%2BUT0AC97IRdgN8hjily3f4T8KLWCCh4Uc61ZOnJr5nigR%2FabTbbeUdtrqia5i%2B4chX0fK5wAaecaFzAsjZp5p5oskY1LVacMDxKvV4ZcX6mpMXi0TgonGUCERAYxnKd0DO0ITpLBMP8xjOaaxvbn550BOkf0S8QLwWpgeqM5IWwBvxdudogyfMmZMC1puGObBnIDfvZi8kna5nJ90qJDysi%2FfesC7Xrkg7LgYEVvqqvbykdDB9AhgMBERj6yZk9cPIti1MJ9y9dNs7dKR%2BXTRasLc5LM32w5KGbx%2Bxv6TQ3fLxoFyZaTwJ0IUwrhXimjasRYNdQnN5x9Uy%2FBEtIwqdrUWw1k%2Fat9YtNi8OFwGRHAwK44%2F9BJU5K3UFcisr8DpfroNYoudtPwdlfp66cR7pmlsi1HZvbpTaIAxIHZKIU%2BO4Fm7uPj7Z14r6G%2BicNvvrzwPhMmEbQUVTRz%2FcsF5AvFsAC%2FLW4VigsZmku9%2FsNtpihUhBI9SO%2F4QMZDzXqLBCMzbFU6MtPDptSneycfyHYAj1wBTsyJ6m%2BPEsCM0WKCm7yWxqliCXp9u7lWZ5XFZLugmCjFbBIcoYkuq4JiPkxUO4LHfDDijUnzrtsvwyQp29fdMJWr4sUGOqUByMrQ06e7oTLVMMpp4e%2Fr3Mc3dULvfcpVTpEvWa8K2YxhNFCUZm6PGbiCoOs33xhEIKoH1l709qT6V9xrz6JwzGWcVyMy%2BUsB1XRAfnAoDtzHtPSbh%2FEGqeOeHJiV6uG7z%2BlsOgVsZzu95c6MM74PTNWtlokepJhhTtRgBxPqRY8EkmE8DyhJSx%2FaGUtFArKpB8ph5J9emIuTZu8nUZRa0YmKVDlT&X-Amz-Signature=bfd36111129721e0ff81c8a5a0906dd6b0fa01506c3ab0a167e2c91235913057&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+        "contactDetails": [
+          {
+            "type": "email",
+            "value": "contact@mylesschwartz.com"
+          },
+          {
+            "type": "phone",
+            "value": "647-999-5594"
+          }
         ]
       }
     ]
   },
-
-  // -----------------------------------------------------------------------------------------------
-  // HEADER
-  // Content for the main header section at the top of the page.
-  // -----------------------------------------------------------------------------------------------
-  header: {
-    // A small tag or label that appears above the main title.
-    tag: "CASE STUDY",
-    // The main headline (H1) of the page.
-    title: "How We Helped an Investor Win a 10-Offer Bidding War and Secure a Cash-Flowing Duplex in Vaughan",
-    // The subheadline below the main title. Can include HTML tags like <strong> or <a>.
-    subheadline: "Purchased in a <strong>High-Demand Area</strong> With Strong Terms—Now Generating Top-Dollar Rent in a Tight Market"
+  "header": {
+    "tag": "CASE STUDY",
+    "title": "How First-Time Sellers Beat Toronto's Brutal Condo Market: Sold in Just 7 Days When Most Take a Month",
+    "subheadline": "Purchased in a <strong>High-Demand Area</strong> With Strong Terms—Now <a href=\"#\">Generating Top-Dollar Rent</a> in a Tight Market"
   },
-
-  // -----------------------------------------------------------------------------------------------
-  // MAIN BOX
-  // This object contains the content for the two-column layout below the header,
-  // which includes the main summary and the sidebar.
-  // -----------------------------------------------------------------------------------------------
-  mainBox: {
-    // Content for the left column (the main summary).
-    summary: {
-      title: "How We Helped an Investor Win a 10-Offer Bidding War and Secure a Cash-Flowing Duplex in Vaughan",
-      heroImage: { src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=800&q=80" },
-      subTitle: "Summary",
-      // An array of paragraph strings. Each string is a new paragraph. Can include HTML.
-      paragraphs: [
-        "In one of Vaughan’s most competitive pockets, a <strong>savvy investor client was looking for a cash-flowing, turn-key property to build long-term generational wealth</strong>. The challenge: high demand, limited inventory, and bidding wars on nearly every listing worth seeing.",
-        "After viewing 8 homes, we found a <strong>rare 2-unit property in Woodbridge</strong> underlisted at $999k to spark competition. The listing drew 10 offers—but through strategic negotiation, a larger deposit, firm terms, and a quick close... we won the deal at $1.26M without needing to be the highest bid. The property has since been <strong>rented at top market value</strong>, exceeding the client’s expectations and <strong>setting the foundation for strong equity gains</strong> in the years to come."
+  "mainBox": {
+    "summary": {
+      "title": "How First-Time Sellers Beat Toronto's Brutal Condo Market: Sold in Just 7 Days When Most Take a Month",
+      "heroImage": {
+        "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=800&q=80"
+      },
+      "subTitle": "Summary",
+      "paragraphs": [
+        "Meet Sarah and Michael, first-time sellers facing every homeowner's nightmare: relocating on a tight timeline in Toronto's unforgiving condo market. With their new home purchase already finalized, they had one shot to sell their Dundas West condo for the exact price they needed - no room for error, no time for delays.",
+        "Through professional service and market expertise, we delivered exceptional results for our client. <strong>SOLD IN 7 DAYS</strong> - while comparable units averaged 30+ days on market Generated 10 qualified showings and 2 solid offers in a market where most listings get crickets <strong>SECURED EXACT CLOSING DATE</strong> they needed for their relocation - no compromises, no delays Eliminated all buyer conditions by preparing documentation ahead of time - creating a clean, hassle-free transaction that closed without drama"
       ]
     },
-    // Content for the right column (the sidebar).
-    sidebar: {
-      title: "About {{companyName}}",
-      image: { src: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?fit=crop&w=200&q=80" },
-      // An array of paragraph strings for the sidebar. Can include HTML like <br> for line breaks.
-      paragraphs: [
-        "At {{companyName}} we are built on integrity, insight, and innovation.",
-        "We combine decades of real estate expertise with cutting-edge technology to deliver unmatched support, transparency, and results for our clients.",
-        "With over 40 years of hands-on real estate experience and extensive corporate backgrounds, our managing partners provide a balanced and strategic approach to Residential, Commercial, and Investment properties.",
-        "We prioritize clear communication and use the latest market insights to guide every client toward success—whether buying, selling, or investing.",
-        "<strong>At iStreet Realty Inc., we're more than real estate experts—we're your trusted partner in building your future.</strong>"
+    "sidebar": {
+      "title": "About {{companyName}}",
+      "image": {
+        "src": "https://prod-files-secure.s3.us-west-2.amazonaws.com/8e0c10a0-da43-409c-b191-91135b7161ff/ca17bf82-c160-4228-8322-1cddba92d2f4/Headshot_1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TJKAVD55%2F20250903%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250903T200117Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIHvE1H3KxmsPNTGBIYZKJbiAByam5%2BxIRdiWNZB9SEsSAiEA03JEMhwjz3WNzG0EJ39Coj5FvQMfFmlgw1ZZSKkMsKIq%2FwMITBAAGgw2Mzc0MjMxODM4MDUiDN5bJk3LkJWRqjMzpyrcA2UP7EsPsBn%2B%2BUT0AC97IRdgN8hjily3f4T8KLWCCh4Uc61ZOnJr5nigR%2FabTbbeUdtrqia5i%2B4chX0fK5wAaecaFzAsjZp5p5oskY1LVacMDxKvV4ZcX6mpMXi0TgonGUCERAYxnKd0DO0ITpLBMP8xjOaaxvbn550BOkf0S8QLwWpgeqM5IWwBvxdudogyfMmZMC1puGObBnIDfvZi8kna5nJ90qJDysi%2FfesC7Xrkg7LgYEVvqqvbykdDB9AhgMBERj6yZk9cPIti1MJ9y9dNs7dKR%2BXTRasLc5LM32w5KGbx%2Bxv6TQ3fLxoFyZaTwJ0IUwrhXimjasRYNdQnN5x9Uy%2FBEtIwqdrUWw1k%2Fat9YtNi8OFwGRHAwK44%2F9BJU5K3UFcisr8DpfroNYoudtPwdlfp66cR7pmlsi1HZvbpTaIAxIHZKIU%2BO4Fm7uPj7Z14r6G%2BicNvvrzwPhMmEbQUVTRz%2FcsF5AvFsAC%2FLW4VigsZmku9%2FsNtpihUhBI9SO%2F4QMZDzXqLBCMzbFU6MtPDptSneycfyHYAj1wBTsyJ6m%2BPEsCM0WKCm7yWxqliCXp9u7lWZ5XFZLugmCjFbBIcoYkuq4JiPkxUO4LHfDDijUnzrtsvwyQp29fdMJWr4sUGOqUByMrQ06e7oTLVMMpp4e%2Fr3Mc3dULvfcpVTpEvWa8K2YxhNFCUZm6PGbiCoOs33xhEIKoH1l709qT6V9xrz6JwzGWcVyMy%2BUsB1XRAfnAoDtzHtPSbh%2FEGqeOeHJiV6uG7z%2BlsOgVsZzu95c6MM74PTNWtlokepJhhTtRgBxPqRY8EkmE8DyhJSx%2FaGUtFArKpB8ph5J9emIuTZu8nUZRa0YmKVDlT&X-Amz-Signature=bfd36111129721e0ff81c8a5a0906dd6b0fa01506c3ab0a167e2c91235913057&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject"
+      },
+      "paragraphs": [
+        "At {{companyName}} we provide professional real estate services with integrity, expertise, and dedication to our clients' success. Our experienced team combines market knowledge with personalized service to help you achieve your real estate goals. Whether you're buying, selling, or investing, we're here to guide you through every step of the process with transparency and results-driven strategies."
       ]
     }
   },
-
-  // -----------------------------------------------------------------------------------------------
-  // SECTIONS
-  // An array of content sections that appear in order below the main box.
-  // You can add, remove, or reorder these section objects.
-  // -----------------------------------------------------------------------------------------------
-  sections: [
-    // `type: "standard"`: A flexible section that can contain a title, paragraphs, a list,
-    // a testimonial, and an image. All properties are optional.
-    // If an `image` is included, the section will render as two columns (text and image).
-    // If no `image` is included, it will be a single, full-width column.
+  "sections": [
     {
-      type: "standard",
-      title: "The Challenge",
-      paragraphs: [
-        "This investor client had a clear goal: <strong>find a cash-flowing, turn-key duplex in one of Vaughan’s most desirable neighborhoods—Woodbridge.</strong> Out in a market filled with bidding wars and underlisted homes designed to spark competition, finding the right property and <strong>winning it without overpaying was no small feat.</strong>",
-        "The biggest challenge? <strong>Every worthwhile home had multiple offers</strong>, and this buyer was competing with aggressive bids from both investors and end-users. There was also <strong>lingering uncertainty around whether a property like this could attract renters at top value</strong>, which could make or break the deal financially."
+      "type": "standard",
+      "title": "The Challenge",
+      "paragraphs": [
+        "\"We were terrified we wouldn't hit our must-have sale number in this brutal market\" - facing the reality that most condos were sitting unsold for weeks",
+        "Racing against an impossible timeline with their new home purchase already locked in - failure meant financial disaster",
+        "Watching comparable units languish on the market while theirs needed to stand out in a sea of identical listings",
+        "Knowing that one misstep in pricing or marketing could cost them their dream relocation"
       ]
     },
     {
-      type: "standard",
-      title: "The Strategy",
-      paragraphs: [
-        "With 8 properties viewed and a clear sense of what would work, the client was ready to move fast. <strong>When 95 Mondavi Rd hit the market—underlisted at $999,000 to fuel a bidding war—we saw an opportunity.</strong>",
-        "Rick’s negotiation strategy focused on strong offer terms, not just price. By removing financing conditions, offering a larger deposit, and proposing a quicker close, he positioned the client as a serious, low-risk buyer. Rick also maintained clear and professional communication with the listing agent throughout, building trust and credibility."
+      "type": "standard",
+      "title": "The Strategy",
+      "paragraphs": [
+        "Transformed their space with strategic upgrades: modern light fixtures, fresh paint throughout, and professional regrouting that made buyers forget this was a resale",
+        "Deployed unconventional staging paired with editorial-style photography that made their listing look like a magazine feature",
+        "Launched targeted Meta ads while securing premium placement on Condos.ca - Toronto's #1 condo destination where serious buyers actually search",
+        "Priced strategically just above market value instead of playing it safe - creating the perception of quality while staying competitive",
+        "Ordered the status certificate upfront, eliminating buyer conditions that typically kill deals in this market"
       ],
-      // An optional testimonial object. Renders as a styled blockquote.
-      testimonial: { quote: "“I had an amazing experience working with Rick & Steven at iStreet Realty Group. Communication and follow-through were prompt every step. Negotiating the winning offer was about strategy, not just price!”<br><span>— Vaughan Investor</span>" }
+      "testimonial": {
+        "quote": "\"\"We were over the moon with the result. Myles delivered exactly what we needed when we needed it most. In a market where everyone said we should expect disappointment, he made our impossible timeline work perfectly. We got to our new home without any hiccups, and honestly, we couldn't believe it sold so quickly when everything we heard said it would take forever.\"\"<br><span>— Satisfied Client</span>"
+      }
     },
     {
-      type: "standard",
-      title: "The Solution",
-      paragraphs: [
-        "<strong>The winning offer came in at $1,260,000</strong>—not the highest bid on the table, but the most attractive in terms of certainty, speed, and simplicity. The absence of conditions and the strength of the deposit made the difference, and the seller accepted.",
-        "<strong>After closing, the client successfully rented out both units</strong> of the property at top market value—proving the property’s income potential. The fast, clean closing allowed the client to move quickly and capitalize on a prime investment opportunity."
+      "type": "standard",
+      "title": "The Solution",
+      "paragraphs": [
+        "After seeing other agents play it safe with cookie-cutter approaches, Sarah and Michael knew they needed someone who would go over the top with marketing - exactly what this brutal market demanded. They chose me because I promised to cut through the industry BS and be brutally honest about what it would take to win."
       ],
-      // An optional image object. If present, creates a two-column layout for this section.
-      image: { src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=800&q=80" }
+      "image": {
+        "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=800&q=80"
+      }
     },
     {
-      type: "standard",
-      title: "The Results",
-      // An optional array of strings for a bulleted list.
-      listItems: [
-        "The client won a competitive 10-offer bidding war and secured a turn-key duplex in Woodbridge that now generates strong rental income.",
-        "Both units were rented out at top market value shortly after closing, confirming the investment’s potential.",
-        "<strong>By acting quickly and strategically, the client not only acquired a high-performing property in a competitive market, but also set themselves up for significant equity growth over the next 3–5 years.</strong>"
+      "type": "standard",
+      "title": "The Results",
+      "paragraphs": [
+        "<strong>SOLD IN 7 DAYS</strong> - while comparable units averaged 30+ days on market",
+        "Generated 10 qualified showings and 2 solid offers in a market where most listings get crickets",
+        "<strong>SECURED EXACT CLOSING DATE</strong> they needed for their relocation - no compromises, no delays",
+        "Eliminated all buyer conditions by preparing documentation ahead of time - creating a clean, hassle-free transaction that closed without drama"
       ]
     },
     {
-      type: "standard",
-      title: "Conclusion",
-      paragraphs: [ "<strong>In a competitive market, success doesn’t always come down to price.</strong> With the right agent, strategy, and negotiation, even a 10-offer bidding war can be an opportunity—not a roadblock." ]
+      "type": "standard",
+      "title": "Conclusion",
+      "paragraphs": [
+        "In tough markets, you must stick out and be different from your competition in every single way - playing it safe guarantees mediocre results",
+        "If you're buying and selling in the same market, a strategic approach to both transactions can turn market challenges into opportunities",
+        "Understanding exactly WHY you want to sell and what opportunities exist right now is more valuable than waiting for \"perfect\" market conditions"
+      ]
     },
-    // `type: "ctaBanner"`: Renders a distinct, full-width Call-to-Action banner with a dark background.
     {
-      type: "ctaBanner",
-      ctaBannerContent: {
-        subhead: "Trusted By Hundreds Of Home Buyers & Sellers",
-        headline: "Find Out More About Working With<br>Rick Roccasalva and Steven<br>Simonetti at {{companyName}}",
-        smallText: "Book A Discovery Call Now ➡️"
+      "type": "ctaBanner",
+      "ctaBannerContent": {
+        "subhead": "Trusted By Hundreds Of Home Buyers & Sellers",
+        "headline": "Get Your Free Market Position Analysis - I'll show you exactly how to make your home irresistible to buyers in today's challenging market, just like Sarah and Michael's success story",
+        "smallText": "Book A Discovery Call Now ➡️"
       }
     }
   ],
-
-  // -----------------------------------------------------------------------------------------------
-  // FOOTER
-  // Content for the footer at the bottom of the page.
-  // -----------------------------------------------------------------------------------------------
-  footer: {
-    logo: { src: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?fit=crop&w=200&q=80" },
-    brokerageLabel: "Brokerage:",
-    brokerageName: "Homelife Partners Realty Corp.",
-    brokerageAddress: "123 Main Street, Suite 456, Toronto, ON M1M 1M1",
-    // A secondary logo, often for the brokerage. Optional.
-    secondaryLogo: { src: "https://i.imgur.com/9GIzqTo.png" },
-    disclaimerText: "All testimonials on this page are from real clients. Their experiences do not guarantee similar results.<br>Individual results may vary based on location, market conditions, motivation, as well as other unforeseen factors. Your results may vary.",
-    privacyPolicy: { text: "Privacy Policy", href: "#" }
+  "footer": {
+    "logo": {
+      "src": "https://prod-files-secure.s3.us-west-2.amazonaws.com/8e0c10a0-da43-409c-b191-91135b7161ff/ca17bf82-c160-4228-8322-1cddba92d2f4/Headshot_1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TJKAVD55%2F20250903%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250903T200117Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIHvE1H3KxmsPNTGBIYZKJbiAByam5%2BxIRdiWNZB9SEsSAiEA03JEMhwjz3WNzG0EJ39Coj5FvQMfFmlgw1ZZSKkMsKIq%2FwMITBAAGgw2Mzc0MjMxODM4MDUiDN5bJk3LkJWRqjMzpyrcA2UP7EsPsBn%2B%2BUT0AC97IRdgN8hjily3f4T8KLWCCh4Uc61ZOnJr5nigR%2FabTbbeUdtrqia5i%2B4chX0fK5wAaecaFzAsjZp5p5oskY1LVacMDxKvV4ZcX6mpMXi0TgonGUCERAYxnKd0DO0ITpLBMP8xjOaaxvbn550BOkf0S8QLwWpgeqM5IWwBvxdudogyfMmZMC1puGObBnIDfvZi8kna5nJ90qJDysi%2FfesC7Xrkg7LgYEVvqqvbykdDB9AhgMBERj6yZk9cPIti1MJ9y9dNs7dKR%2BXTRasLc5LM32w5KGbx%2Bxv6TQ3fLxoFyZaTwJ0IUwrhXimjasRYNdQnN5x9Uy%2FBEtIwqdrUWw1k%2Fat9YtNi8OFwGRHAwK44%2F9BJU5K3UFcisr8DpfroNYoudtPwdlfp66cR7pmlsi1HZvbpTaIAxIHZKIU%2BO4Fm7uPj7Z14r6G%2BicNvvrzwPhMmEbQUVTRz%2FcsF5AvFsAC%2FLW4VigsZmku9%2FsNtpihUhBI9SO%2F4QMZDzXqLBCMzbFU6MtPDptSneycfyHYAj1wBTsyJ6m%2BPEsCM0WKCm7yWxqliCXp9u7lWZ5XFZLugmCjFbBIcoYkuq4JiPkxUO4LHfDDijUnzrtsvwyQp29fdMJWr4sUGOqUByMrQ06e7oTLVMMpp4e%2Fr3Mc3dULvfcpVTpEvWa8K2YxhNFCUZm6PGbiCoOs33xhEIKoH1l709qT6V9xrz6JwzGWcVyMy%2BUsB1XRAfnAoDtzHtPSbh%2FEGqeOeHJiV6uG7z%2BlsOgVsZzu95c6MM74PTNWtlokepJhhTtRgBxPqRY8EkmE8DyhJSx%2FaGUtFArKpB8ph5J9emIuTZu8nUZRa0YmKVDlT&X-Amz-Signature=bfd36111129721e0ff81c8a5a0906dd6b0fa01506c3ab0a167e2c91235913057&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject"
+    },
+    "brokerageLabel": "Brokerage:",
+    "brokerageName": "Property.Ca",
+    "brokerageAddress": "36 Distillery Lane Unit 500 Toronto M5A3C4",
+    "secondaryLogo": {
+      "src": "https://i.imgur.com/9GIzqTo.png"
+    },
+    "disclaimerText": "All testimonials on this page are from real clients. Their experiences do not guarantee similar results.<br>Individual results may vary based on location, market conditions, motivation, as well as other unforeseen factors. Your results may vary.",
+    "privacyPolicy": {
+      "text": "Privacy Policy",
+      "href": "https://property.ca/privacy"
+    }
   }
 };
 
