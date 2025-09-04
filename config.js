@@ -36,7 +36,7 @@ const config = {
       "subTitle": "Summary",
       "paragraphs": [
         "Meet Sarah and Michael, first-time sellers facing every homeowner's nightmare: relocating on a tight timeline in Toronto's unforgiving condo market. With their new home purchase already finalized, they had one shot to sell their Dundas West condo for the exact price they needed - no room for error, no time for delays.",
-        "Through professional service and market expertise, we delivered exceptional results for our client. <strong>SOLD IN 7 DAYS</strong>: while comparable units averaged 30+ days on market Generated 10 qualified showings and 2 solid offers in a market where most listings get crickets <strong>SECURED EXACT CLOSING DATE</strong>: they needed for their relocation - no compromises, no delays Eliminated all buyer conditions by preparing documentation ahead of time - creating a clean, hassle-free transaction that closed without drama"
+        "Through professional service and market expertise, we delivered exceptional results for our client. <strong>SOLD IN 7 DAYS</strong>: while comparable units averaged 30+ days on market Generated 10 qualified showings and 2 solid offers in a market where most listings get crickets. <strong>SECURED EXACT CLOSING DATE</strong>: they needed for their relocation - no compromises, no delays. Eliminated all buyer conditions by preparing documentation ahead of time - creating a clean, hassle-free transaction that closed without drama"
       ]
     },
     "sidebar": {
