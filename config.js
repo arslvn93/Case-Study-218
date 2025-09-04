@@ -31,7 +31,7 @@ const config = {
     "summary": {
       "title": "How First-Time Sellers Beat Toronto's Brutal Condo Market: Sold in Just 7 Days When Most Take a Month",
       "heroImage": {
-        "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=800&q=80"
+        "src": "https://iili.io/KCMNZKl.webp"
       },
       "subTitle": "Summary",
       "paragraphs": [
