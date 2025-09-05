@@ -18,7 +18,7 @@ const config = {
     ],
     "companyName": "Myles Schwartz",
     "mainCTAButtonText": "Book A Discovery Call",
-    "mainCTAButtonURL": "https://calendly.com/mylesschwartz/discovery-call?month=2025-09",
+    "mainCTAButtonURL": "https://calendly.com/mylesschwartz/discovery-call?",
     "primaryColor": "#e3c379",
     "accentColor": "#d9c6a2"
   },
