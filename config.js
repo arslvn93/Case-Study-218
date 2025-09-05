@@ -54,10 +54,10 @@ const config = {
       "type": "standard",
       "title": "The Challenge",
       "paragraphs": [
-        "\"We were terrified we wouldn't hit our must-have sale number in this brutal market\" - facing the reality that most condos were sitting unsold for weeks",
-        "Racing against an impossible timeline with their new home purchase already locked in - failure meant financial disaster",
-        "Watching comparable units languish on the market while theirs needed to stand out in a sea of identical listings",
-        "Knowing that one misstep in pricing or marketing could cost them their dream relocation"
+        "\"We were terrified we wouldn't hit our must-have sale number in this brutal market\" - facing the reality that most condos were sitting unsold for weeks.",
+        "Racing against an impossible timeline with their new home purchase already locked in - failure meant financial disaster.",
+        "Watching comparable units languish on the market while theirs needed to stand out in a sea of identical listings.",
+        "Knowing that one misstep in pricing or marketing could cost them their dream relocation."
       ],
       "listItems": []
     },
@@ -65,11 +65,11 @@ const config = {
       "type": "standard",
       "title": "The Strategy",
       "paragraphs": [
-        "Transformed their space with strategic upgrades: modern light fixtures, fresh paint throughout, and professional regrouting that made buyers forget this was a resale",
-        "Deployed unconventional staging paired with editorial-style photography that made their listing look like a magazine feature",
-        "Launched targeted Meta ads while securing premium placement on Condos.ca - Toronto's #1 condo destination where serious buyers actually search",
-        "Priced strategically just above market value instead of playing it safe - creating the perception of quality while staying competitive",
-        "Ordered the status certificate upfront, eliminating buyer conditions that typically kill deals in this market"
+        "Transformed their space with strategic upgrades: modern light fixtures, fresh paint throughout, and professional regrouting that made buyers forget this was a resale.",
+        "Deployed unconventional staging paired with editorial-style photography that made their listing look like a magazine feature.",
+        "Launched targeted Meta ads while securing premium placement on Condos.ca - Toronto's #1 condo destination where serious buyers actually search.",
+        "Priced strategically just above market value instead of playing it safe - creating the perception of quality while staying competitive.",
+        "Ordered the status certificate upfront, eliminating buyer conditions that typically kill deals in this market."
       ],
       "testimonial": {
         "quote": "\"\"We were over the moon with the result. Myles delivered exactly what we needed when we needed it most. In a market where everyone said we should expect disappointment, he made our impossible timeline work perfectly. We got to our new home without any hiccups, and honestly, we couldn't believe it sold so quickly when everything we heard said it would take forever.\"\"<br><span>— Satisfied Client</span>"
@@ -91,10 +91,10 @@ const config = {
       "type": "standard",
       "title": "The Results",
       "paragraphs": [
-        "<strong>SOLD IN 7 DAYS</strong> - while comparable units averaged 30+ days on market",
-        "Generated 10 qualified showings and 2 solid offers in a market where most listings get crickets",
-        "<strong>SECURED EXACT CLOSING DATE</strong> they needed for their relocation - no compromises, no delays",
-        "Eliminated all buyer conditions by preparing documentation ahead of time - creating a clean, hassle-free transaction that closed without drama"
+        "<strong>SOLD IN 7 DAYS</strong> - while comparable units averaged 30+ days on market.",
+        "Generated 10 qualified showings and 2 solid offers in a market where most listings get crickets.",
+        "<strong>SECURED EXACT CLOSING DATE</strong> they needed for their relocation - no compromises, no delays.",
+        "Eliminated all buyer conditions by preparing documentation ahead of time - creating a clean, hassle-free transaction that closed without drama."
       ],
       "listItems": []
     },
@@ -102,9 +102,9 @@ const config = {
       "type": "standard",
       "title": "Conclusion",
       "paragraphs": [
-        "In tough markets, you must stick out and be different from your competition in every single way - playing it safe guarantees mediocre results",
-        "If you're buying and selling in the same market, a strategic approach to both transactions can turn market challenges into opportunities",
-        "Understanding exactly WHY you want to sell and what opportunities exist right now is more valuable than waiting for \"perfect\" market conditions"
+        "In tough markets, you must stick out and be different from your competition in every single way - playing it safe guarantees mediocre results.",
+        "If you're buying and selling in the same market, a strategic approach to both transactions can turn market challenges into opportunities.",
+        "Understanding exactly WHY you want to sell and what opportunities exist right now is more valuable than waiting for \"perfect\" market conditions."
       ],
       "listItems": []
     },
@@ -112,7 +112,7 @@ const config = {
       "type": "ctaBanner",
       "ctaBannerContent": {
         "subhead": "Trusted By Hundreds Of Home Buyers & Sellers",
-        "headline": "Get Your Free Market Position Analysis - I'll show you exactly how to make your home irresistible to buyers in today's challenging market, just like Sarah and Michael's success story",
+        "headline": "Get Your Free Market Position Analysis - I'll show you exactly how to make your home irresistible to buyers in today's challenging market, just like Sarah and Michael's success story.",
         "smallText": "Book A Discovery Call Now ➡️"
       }
     }
