@@ -83,7 +83,7 @@ const config = {
         "After seeing other agents play it safe with cookie-cutter approaches, Sarah and Michael knew they needed someone who would go over the top with marketing - exactly what this brutal market demanded. They chose me because I promised to cut through the industry BS and be brutally honest about what it would take to win."
       ],
       "image": {
-        "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=800&q=80"
+        "src": "https://iili.io/KCMNZKl.webp"
       },
       "listItems": []
     },
