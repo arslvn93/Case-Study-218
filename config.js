@@ -123,7 +123,7 @@ const config = {
       "href": "https://property.ca/privacy"
     },
     "logo": {
-      "src": "https://iili.io/KCMXWLQ.webp"
+      "src": "https://iili.io/KCDMuRf.webp"
     },
     "secondaryLogo": {
       "src": "https://iili.io/KCMyUN9.webp"
