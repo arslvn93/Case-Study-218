@@ -91,10 +91,10 @@ const config = {
       "type": "standard",
       "title": "The Results",
       "paragraphs": [
-        "<strong>SOLD IN 7 DAYS</strong> - while comparable units averaged 30+ days on market.",
-        "Generated 10 qualified showings and 2 solid offers in a market where most listings get crickets.",
-        "<strong>SECURED EXACT CLOSING DATE</strong> they needed for their relocation - no compromises, no delays.",
-        "Eliminated all buyer conditions by preparing documentation ahead of time - creating a clean, hassle-free transaction that closed without drama."
+        "-<strong>SOLD IN 7 DAYS</strong> - while comparable units averaged 30+ days on market.",
+        "-Generated 10 qualified showings and 2 solid offers in a market where most listings get crickets.",
+        "-<strong>SECURED EXACT CLOSING DATE</strong> they needed for their relocation - no compromises, no delays.",
+        "-Eliminated all buyer conditions by preparing documentation ahead of time - creating a clean, hassle-free transaction that closed without drama."
       ],
       "listItems": []
     },
@@ -102,9 +102,9 @@ const config = {
       "type": "standard",
       "title": "Conclusion",
       "paragraphs": [
-        "In tough markets, you must stick out and be different from your competition in every single way - playing it safe guarantees mediocre results.",
-        "If you're buying and selling in the same market, a strategic approach to both transactions can turn market challenges into opportunities.",
-        "Understanding exactly WHY you want to sell and what opportunities exist right now is more valuable than waiting for \"perfect\" market conditions."
+        "-In tough markets, you must stick out and be different from your competition in every single way - playing it safe guarantees mediocre results.",
+        "-If you're buying and selling in the same market, a strategic approach to both transactions can turn market challenges into opportunities.",
+        "-Understanding exactly WHY you want to sell and what opportunities exist right now is more valuable than waiting for \"perfect\" market conditions."
       ],
       "listItems": []
     },
