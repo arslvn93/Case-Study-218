@@ -25,7 +25,7 @@ const config = {
   "header": {
     "tag": "CASE STUDY",
     "title": "How First-Time Sellers Beat Toronto's Brutal Condo Market: Sold in Just 7 Days When Most Take a Month",
-    "subheadline": "Purchased in a <strong>High-Demand Area</strong> With Strong Terms — Now Generating Top-Dollar Rent in a Tight Market"
+    "subheadline": "Sold Above Asking & Rented for Top Dollar — All Within a Single Week."
   },
   "mainBox": {
     "summary": {
